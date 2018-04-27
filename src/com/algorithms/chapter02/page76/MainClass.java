@@ -11,7 +11,8 @@ public class MainClass {
 		
 		int T = Integer.parseInt("4");
 	
-	
+		System.out.println(666666);
+		System.out.println(8888);
 		
 	}
 

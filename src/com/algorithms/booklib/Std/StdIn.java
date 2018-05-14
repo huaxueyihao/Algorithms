@@ -255,7 +255,8 @@ public final class StdIn {
 	
 	public static void main(String[] args) {
 		
-		
+		String[] s = StdIn.readAllStrings();
+		StdOut.println(s);
 		
 	}
 	

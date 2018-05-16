@@ -29,19 +29,20 @@ public class FixedCapacityStackOfStrings {
 		return size;
 	}
 	
+	public boolean isFull() {
+		
+		return size == str.length;
+	}
 	public static void main(String[] args) {
 		
 		FixedCapacityStackOfStrings stack = new FixedCapacityStackOfStrings(5);
 	
 		stack.push("a");
 		stack.push("b");
-		stack.push("c");
+		stack.push("b");
+		stack.push("b");
+		StdOut.println(stack.isFull());
 		
-		StdOut.println(stack.pop());
-		StdOut.println(stack.pop());
-		StdOut.println(stack.pop());
-		
-		StdOut.println(stack.size());
 	}
 	
 	
